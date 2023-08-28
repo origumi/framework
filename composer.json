@@ -1,0 +1,49 @@
+{
+    "name": "origumi/framework",
+    "description": "origumi core framework",
+    "keywords": [
+        "origumi",
+        "framework"
+    ],
+    "homepage": "https://github.com/origumi/framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iman Atarof",
+            "email": "imanatarof@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "pestphp/pest": "*",
+        "laravel/pint": "*",
+        "spatie/ray": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Origumi\\Framework\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Origumi\\Framework\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
